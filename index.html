@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #e6e1a4;
+        }
+        #area {
+            width: 1920px;
+            height: 500px;
+            background-color: red;
+            border: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .color-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .color-input {
+            margin: 0 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .slider {
+            width: 100%;
+            margin: 10px 0;
+            background-color: #a19d6c;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+
+        }
+        .input-group input[type="text"] {
+            width: 50px;
+            margin-left: 10px;
+        }
+        .section {
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: #f5ffd3;
+        }
+        hr {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div id="area"></div>
+
+<div class="color-container">
+    <input id="picker" type="color" class="color-input">
+</div>
+
+<div class="section">
+    <h2>RGB</h2>
+    <div class="input-group">
+        <label>Red:</label>
+        <input id="red_slider" type="range" min="0" max="255" class="slider">
+        <input id="red_input" type="text">
+    </div>
+    <div class="input-group">
+        <label>Green:</label>
+        <input id="green_slider" type="range" min="0" max="255" class="slider">
+        <input id="green_input" type="text">
+    </div>
+    <div class="input-group">
+        <label>Blue:</label>
+        <input id="blue_slider" type="range" min="0" max="255" class="slider">
+        <input id="blue_input" type="text">
+    </div>
+</div>
+
+<div class="section">
+    <h2>CMYK</h2>
+    <div class="input-group">
+        <label>Cyan:</label>
+        <input id="cyan_slider" type="range" min="0" max="100" class="slider">
+        <input id="cyan_input" type="text">
+    </div>
+    <div class="input-group">
+        <label>Magenta:</label>
+        <input id="magenta_slider" type="range" min="0" max="100" class="slider">
+        <input id="magenta_input" type="text">
+    </div>
+    <div class="input-group">
+        <label>Yellow:</label>
+        <input id="yellow_slider" type="range" min="0" max="100" class="slider">
+        <input id="yellow_input" type="text">
+    </div>
+    <div class="input-group">
+        <label>Key:</label>
+        <input id="key_slider" type="range" min="0" max="100" class="slider">
+        <input id="key_input" type="text">
+    </div>
+</div>
+
+<div class="section">
+    <h2>HSV</h2>
+    <div class="input-group">
+        <label>Hue:</label>
+        <input id="hue_slider" type="range" min="0" max="360" class="slider">
+        <input id="hue_input" type="text">
+    </div>
+    <div class="input-group">
+        <label>Saturation:</label>
+        <input id="saturation_slider" type="range" min="0" max="100" class="slider">
+        <input id="saturation_input" type="text">
+    </div>
+    <div class="input-group">
+        <label>Value:</label>
+        <input id="value_slider" type="range" min="0" max="100" class="slider">
+        <input id="value_input" type="text">
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
